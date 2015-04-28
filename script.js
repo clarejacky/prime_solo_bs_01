@@ -6,10 +6,11 @@ var apikey = '91df4711deb6a6fa8e7c694207940394218396cd'; // Put your API key her
 function searchCallback(results) {
     console.log(results);
      for(var i=0; i < 9; i++) {
-    	$(".mainContent").append("<div id='" + results[i].id + "'class='col-md-4 well second'><p class='lead'>"+results[i].name+"</p><div class='hidden-sm hidden-xs'><img id='icon' src='"+results[i].image.icon_url+"'/></div><div>Description: "+results[i].deck+"</div><button class='btn-sm btn-success remove'></button></div>");
-
+     	var el = "<div id='" + results[i].id + "'class='col-md-4 well second'><p class='lead'>"+results[i].name+"</p><div class='hidden-sm hidden-xs'><img id='icon' src='"+results[i].image.icon_url+"'/></div><div>Description: "+results[i].deck+"</div><button class='btn-sm btn-success remove'>Remove Title</button></div>"
+    	$(el).hide().appendTo(".mainContent").fadeIn("slow");
+    	// $(".mainContent").children(el).fadeIn();
     	$(".mainContent").on("click", "button", function(){
-    		$(this).parent().remove();
+    		$(this).parent().fadeOut();
     	});
     	// $(".mainContent").on("click", "#"+results[i].id, function(){
     	// $(this).children().hide();

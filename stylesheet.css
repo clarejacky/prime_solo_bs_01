@@ -1,7 +1,7 @@
 
 
 .second {
-	height: 300px;
+	height: 350px;
 	background-color: #263248;
 }
 img {
@@ -17,4 +17,7 @@ body {
 .first {
 	background-color: #FFA30C;
 	color: black;
+}
+button {
+	margin: 10px 0;
 }
