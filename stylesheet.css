@@ -2,29 +2,29 @@
 
 .second {
 	height: 350px;
-	background-color: #263248;
+	background-color: #FF3838;
 }
 img {
 	margin: 10px 0;
 }
 
-body {
+/*body {
 	color: #7E8AA2;
 	background-color: #7E8AA2;
 	font-family: 'Lato', sans-serif;
-}
+}*/
 
-.first {
+/*.first {
 	background-image: url('http://www.fillmurray.com/900/200');
 	color: gray;
-}
+}*/
 button {
 	margin: 10px 0;
 }
-h1 {
-	font-family: 'Ubuntu', sans-serif;
+/*h1 {
+	font-family: 'Droid Sans', sans-serif;
 	text-align: right;
 	font-size: 64px;
-	color: white;
+	color: #FF3838;
 	font-weight: bold;
-}
+}*/
