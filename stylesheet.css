@@ -15,9 +15,16 @@ body {
 }
 
 .first {
-	background-color: #FFA30C;
-	color: black;
+	background-image: url('http://www.fillmurray.com/900/200');
+	color: gray;
 }
 button {
 	margin: 10px 0;
+}
+h1 {
+	font-family: 'Ubuntu', sans-serif;
+	text-align: right;
+	font-size: 64px;
+	color: white;
+	font-weight: bold;
 }
