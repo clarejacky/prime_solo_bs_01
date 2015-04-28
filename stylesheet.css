@@ -1,0 +1,20 @@
+
+
+.second {
+	height: 300px;
+	background-color: #263248;
+}
+img {
+	margin: 10px 0;
+}
+
+body {
+	color: #7E8AA2;
+	background-color: #7E8AA2;
+	font-family: 'Lato', sans-serif;
+}
+
+.first {
+	background-color: #FFA30C;
+	color: black;
+}
