@@ -1,6 +1,6 @@
 var apikey = '91df4711deb6a6fa8e7c694207940394218396cd'; // Put your API key here
 
-
+var count = 0;
 // Use this function to do stuff with your results. 
 // It is called after 'search' is executed.
 function searchCallback(results) {
@@ -8,17 +8,19 @@ function searchCallback(results) {
      for(var i=0; i < 9; i++) {
      	var el = "<div id='" + results[i].id + "'class='col-md-4 well second'><p class='lead'>"+results[i].name+"</p><div class='hidden-sm hidden-xs'><img id='icon' src='"+results[i].image.icon_url+"'/></div><div>Description: "+results[i].deck+"</div><button class='btn-sm btn-success remove'>Remove Title</button></div>"
     	$(el).hide().appendTo(".mainContent").fadeIn("slow");
-    	// $(".mainContent").children(el).fadeIn();
+    	}
+
     	$(".mainContent").on("click", "button", function(){
     		$(this).parent().fadeOut();
-    	});
-    	// $(".mainContent").on("click", "#"+results[i].id, function(){
-    	// $(this).children().hide();
-    	// $(this).siblings().children("#game").hide();
-    	// $(this).children().slideDown();
-
-    	// });
+    		count++;
+    		for(var i=(8+ count); i < (9+count); i++) {
+     			var el = "<div id='" + results[i].id + "'class='col-md-4 well second'><p class='lead'>"+results[i].name+"</p><div class='hidden-sm hidden-xs'><img id='icon' src='"+results[i].image.icon_url+"'/></div><div>Description: "+results[i].deck+"</div><button class='btn-sm btn-success remove'>Remove Title</button></div>"
+    			$(el).hide().appendTo(".mainContent").fadeIn("slow");
     	}
+
+    	});
+    	
+    	
 }
 
 $(document).ready(function() {
