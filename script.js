@@ -24,8 +24,16 @@ function searchCallback(results) {
 $(document).ready(function() {
 
 	// Start the search here!
-	search("batman");
+	// search("batman");
+var value; 
 
+	$(".searchBtn").on("click", function (e) {
+		$(".mainContent").empty();
+		value = $("#searchField").val();
+
+		search(value);
+		e.preventDefault();
+	});
 	
 });
 
